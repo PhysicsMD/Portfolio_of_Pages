@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alenn Wright">
+    <title>Crew101 Arizona Cover Band</title>
+    <link rel="stylesheet" href="/css/home.css">
+</head>
+<body>
+    <header class='nav-content'>
+        <nav>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn">
+                <span class="navicon">Menu ☰</span>
+            </label>
+            <ul class='menu'>
+                <li><a href=''>CREW101</a></li>
+                <li><a href='#events'>EVENTS</a></li>
+                <li><a href='/sounds'>SOUND BITES</a></li>
+                <li><a href='/about'>ABOUT THE CREW</a></li>
+                <li><a href='#contact'>CONTACT US</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class='splash'>
+        <img src='/images/splash/bandstage.jpeg'>
+        <img class='logoimg' src='/images/splash/Crew101-logo.png'>
+    </div>
+    <div class='main-content'>
+        <h2>WHO WE ARE</h2>
+        <hr>
+        <p>We are an energetic classic rock cover band, bringing you the nostalgic hits you grew up with on the radio from the 70s-90s. We are 5 highly entertaining musicians playing your favorites from Aerosmith, Sammy Hagar, Foreigner, Pat Benatar, Joan Jett, Guns N Roses, Pink Floyd, B-52s, Stone Temple Pilots, AC/DC, and more.</p>
+        <h2>WHERE WE HAVE BEEN</h2>
+        <hr>
+        <p id='past-events'>That's Weird</p>
+        <h2 id='events'></h2>
+        <h2>WHERE WE ARE GOING</h2>
+        <hr>
+        <p id='upcoming-events'>TBD</p>
+        <h2 id='contact'></h2>
+        <h2>GET IN TOUCH</h2>
+        <hr>
+        <div class='contactArea'>
+            <div class='contactCard'>
+                <p>Reach us with our email</p> 
+                <p>Email: crew101info@gmail.com</p>
+                <ul>
+                <li><a target='_blank' href=''><img src='/images/icons/instagram-square-brands.svg'></a></li>
+                <li><a target='_blank' href='https://www.facebook.com/pages/category/Musician-band/Crew-101-776080042730773/'><img src='/images/icons/facebook-square-brands.svg'></a></li>
+                <li><a target='_blank' href='https://www.youtube.com/channel/UCId_b-O_QmXdGppX9XVHe_Q'><img src='/images/icons/youtube-square-brands.svg'></a></li>
+                </ul>
+                <p>or use our contact form</p>
+            </div>
+            <div class='contactForm'>
+                <form action="https://formspree.io/f/xzbollpg" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="user_name" placeholder='Your Name Here'/>
+                    <label for="mail">E-mail:</label>
+                    <input type="email" id="mail" name="user_mail" placeholder='E-mail'/>
+                    <label for="msg">Message:</label>
+                    <textarea id="msg" name="user_message" placeholder='Put your Message Here'></textarea>
+                    <button type="submit">Send your message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class='footer'>
+        <div class='footer-content'></div>
+        <p>© 2022 CREW101. All rights reserved.</p>
+    </div>
+    <script>
+        history.scrollRestoration = "manual"
+    </script>
+    <script src="/js/EventsList.js"></script>
+    <script src="/js/Events.js"></script>
+</body>
+</html>

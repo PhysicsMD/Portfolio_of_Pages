@@ -1,0 +1,274 @@
+body {
+    margin: 0;
+    background-image: url('/images/background_pattern/backpattern.png');
+    font-family: Helvetica, Verdana, 'Trebuchet MS', Arial, sans-serif;
+}
+.main-content p {
+    font-size: 20px;
+}
+div {
+    border: 2px solid darkred;
+}
+.nav-content {
+    z-index:1;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin: 0px;
+    background: rgba(0, 0, 0, 0.9);;
+    box-shadow: 0px 5px darkred;
+}
+.main-content {
+    Position: relative;
+    margin-left: 50%;
+    transform: translate(-50%,150px);
+    border-radius: 10px;
+    color: white;
+    background: #555;
+}
+.main-content h2 {
+    font-size: 30px;
+}
+.splash{
+    position: relative;
+    margin-left: 50%;
+    transform: translate(-50%,100px);
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+}
+.splash img{
+    border-radius: 10px;
+}
+.logoimg {
+    position: absolute;
+}
+nav ul {
+    list-style-type: none;
+}
+nav ul li{
+    display: inline;
+    padding: 15px;
+}
+a > div:hover{
+    box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.5)
+}
+#events {
+    display: block;
+    position: relative;
+    top: -100px;
+    visibility: hidden;
+}
+.contactArea {
+    display: flex;
+    border: none;
+    flex-wrap: wrap;
+}
+.contactCard {
+    display: flex;
+    background-color: black;
+    width: 250px;
+    padding-left: 20px;
+    flex-direction: column;
+    margin : auto;
+    justify-content: flex-start;
+}
+.contactForm{
+    display: flex;
+    width: 50%;
+    border: none;
+    margin : 0;
+    padding-left: 20px;
+    justify-content: flex-end;
+    
+}
+.contactForm > form{
+    width: 100%;
+}
+.contactForm > form > *{
+    display: block;
+    font-size: 20px;
+    padding: 10px;
+}
+.contactForm > form > input{
+    height: 3rem;
+    width: 90%;
+    border: 0;
+    outline: none;
+    background-color: lightgrey;
+}
+.contactForm > form > textarea{
+    height: 6rem;
+    width: 90%;
+    border: 0;
+    outline: none;
+    background-color: lightgrey;
+}
+.contactForm > form > button{
+    height: 3rem;
+    background-color: lightgrey;
+    margin-top: 10px;
+}
+.contactForm > form > button:hover{
+    color: white;
+    background-color: black;
+}
+@media (min-width: 900px){
+    nav ul li:hover{
+        background: #222;
+    }
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: lightGrey;
+    transition: .25s;
+}
+@keyframes navbarlinkOn {
+    from {color: lightGrey;}
+    to {color: red;}
+}
+nav ul li a:hover{
+    color: red;
+    animation-name: navbarlinkOn;
+    animation-duration: .25s;
+}
+.footer {
+    background: black;
+    position: absolute;
+    width: 100%;
+    margin-top: 100px;
+    margin-left: 50%;
+    transform: translate(-50%, 150%);
+}
+.footer div {
+    box-shadow: 0px 5px 0px darkred inset;
+    border: none;
+}
+.footer {
+    text-align: center;
+    color: white;
+}
+.menu-btn {
+    display: none;
+}
+.contactCard ul{
+    list-style: none;
+    margin: 0px;
+    padding-left: 0px;
+}
+.contactCard ul li{
+    display: inline-block;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.contactCard ul li img{
+    background: white;
+    border-radius: 10%;
+    width: 30px;
+    height: 30px;
+}
+@media (max-width: 600px) {
+    /* Mobil Screen Range CSS */ 
+    .main-content {
+        width: 90%;
+        padding: 15px;
+        padding-top: 5px;
+    }
+    .splash{
+        width: 600px;
+    }
+    .splash img{
+        width: 600px;
+    }
+    .logoimg {
+        transform: translate(-100%, 70px) scale(.6);
+    }
+}
+@media (min-width: 600px) and (max-width: 1000px) {
+    /* Tablet Screen Range CSS */ 
+    .main-content {
+        width: 550px;
+        padding: 25px;
+        padding-top: 10px;
+    }
+    .splash{
+        width: 600px;
+    }
+    .splash img{
+        width: 600px;
+    }
+    .logoimg {
+        transform: translate(-100%, 70px) scale(.6);
+    }
+}
+@media (min-width: 1000px) { 
+    /* Desktop Screen Range CSS */
+    .main-content {
+        width: 950px;
+        padding: 25px;
+        padding-top: 10px;
+    }
+    .splash{
+        width: 1000px;
+    }
+    .splash img{
+        width: 1000px;
+    }
+    .logoimg {
+        transform: translate(-100%,100px) scale(.6);
+    }
+}
+@media (max-width: 900px){
+    /* Mobile Menu */
+    
+    /* hides drop menu */
+    nav ul {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+    /* drop menu item style */
+    nav li a {
+        display: block;
+        padding: 10px 10px;
+    }
+    /* drop menu hover */
+    nav li a:hover,
+    nav .menu-btn:hover {
+        background-color: #222;
+    }
+    /* hides drop menu */
+    nav .menu {
+        max-height: 0;
+        transition: max-height .2s ease-out;
+    }
+    /* menu icon  */
+    nav .menu-icon {
+        cursor: pointer;
+        display: inline-block;
+        padding: 28px 20px;
+        position: relative;
+        user-select: none;
+    }
+    /* to make menu btn vissible unnessecery                                               */
+    nav .menu-icon .navicon {
+        display: block;
+        font-size: 20px;
+        font-weight: 700;
+        color: lightGrey;
+    }
+    nav .menu-btn {
+        display: none;
+    }
+    nav .menu-btn:checked ~ .menu {
+        max-height: 320px;
+    }
+    .contactForm{
+    width: 100%;
+    
+}
+}

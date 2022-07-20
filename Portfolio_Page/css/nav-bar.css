@@ -1,0 +1,35 @@
+nav {
+    height: 50px;
+    width: 100%;
+    display: border-box;
+    position: relative;
+    top:0px;
+    overflow: hidden;
+}
+.NameLogo {
+    display: block;
+    position: absolute;
+    left: 30px;
+    line-height: 50px;
+    font-weight: bold;
+    color: white;
+}
+.NameLogo span{
+    color: turquoise;
+}
+.Navbar {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+.Navbar ul {
+    list-style:none;
+    padding-left:0;
+    margin: 0;
+}
+.Navbar ul li{
+    float: left;
+    padding-left: 1em;
+    padding-right: 1em;
+    line-height: 50px;
+}
